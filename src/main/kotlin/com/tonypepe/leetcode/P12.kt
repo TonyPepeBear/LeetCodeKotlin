@@ -1,13 +1,5 @@
 package com.tonypepe.leetcode
 
-import java.lang.StringBuilder
-
-fun main() {
-    for (i in 1..3999) {
-        println("$i -> ${P12().intToRoman(i)}")
-    }
-}
-
 class P12 {
     fun intToRoman(num: Int): String {
         val nums = listOf(1000, 100, 10, 1)

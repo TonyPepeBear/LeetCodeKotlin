@@ -1,9 +1,5 @@
 package com.tonypepe.leetcode
 
-fun main() {
-    println(P905().sortArrayByParity(intArrayOf(3, 1, 2, 4)).contentToString())
-}
-
 fun Int.isOdd() = this % 2 == 0
 
 class P905 {

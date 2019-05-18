@@ -1,17 +1,6 @@
 package com.tonypepe.leetcode
 
-import java.lang.StringBuilder
 import java.util.*
-import kotlin.collections.ArrayList
-
-fun main() {
-    println(
-        P819().mostCommonWord(
-            "Bob. hIt, baLl",
-            arrayOf()
-        )
-    )
-}
 
 fun String.noSymbols(): ArrayList<String> {
     val array = arrayListOf<String>()

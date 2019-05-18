@@ -1,18 +1,5 @@
 package com.tonypepe.leetcode
 
-import java.lang.StringBuilder
-
-fun main() {
-    val testData = arrayOf(
-        "to...ny+ee@gmail.com",
-        "to....ny+eeee@gmail.com",
-        "town@gmail.com",
-        "t.o.w.n@gmail.com",
-        "t.o.w.n+22@gmail.com"
-    )
-    println(P929().numUniqueEmails(testData))
-}
-
 class P929 {
     fun numUniqueEmails(emails: Array<String>): Int {
         val ansEmails = arrayListOf<String>()
