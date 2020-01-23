@@ -4,8 +4,13 @@ class P12 {
     fun intToRoman(num: Int): String {
         val nums = listOf(1000, 100, 10, 1)
         val valSym = mapOf(
-            1000 to "M", 500 to "D", 100 to "C", 50 to "L",
-            10 to "X", 5 to "V", 1 to "I"
+            1000 to "M",
+            500 to "D",
+            100 to "C",
+            50 to "L",
+            10 to "X",
+            5 to "V",
+            1 to "I"
         )
         var n = num
         val ansStr = StringBuilder()
