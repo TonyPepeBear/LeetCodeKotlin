@@ -1,6 +1,6 @@
-name: Run Test on PR
+name: Run Test on Push
 
-on: pull_request
+on: push
 
 jobs:
   gradle:
