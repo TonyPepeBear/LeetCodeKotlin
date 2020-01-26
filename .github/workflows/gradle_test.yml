@@ -13,6 +13,8 @@ jobs:
     - uses: actions/setup-java@master
       with:
         java-version: 11
+    - name: Chang Mod
+      run: chmod 755 gradlew    
     - uses: eskatos/gradle-command-action@v1
       with:
         arguments: test
