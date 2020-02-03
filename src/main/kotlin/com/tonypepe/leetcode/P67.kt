@@ -10,14 +10,16 @@ class P67 {
         return aBinary.toString()
     }
 
-    inner class Binary(number: String) {
-        val num: MutableList<Int> = kotlin.run {
+    inner class Binary() {
+        constructor(number: String) : this() {
             val nums = mutableListOf<Int>()
             for (i in number.length - 1 downTo 0) {
                 nums.add(number[i].toInt() - '0'.toInt())
             }
-            nums
+            num = nums
         }
+
+        var num: MutableList<Int> = mutableListOf(0)
 
         fun add(other: Binary) {
             val size = max(size(), other.size())
