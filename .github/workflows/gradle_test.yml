@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/setup-java@v2
       with:
-        distributions: zulu
+        distribution: zulu
         java-version: 11
     - name: Chang Mod
       run: chmod 755 gradlew    
