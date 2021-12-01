@@ -12,6 +12,7 @@ jobs:
         distribution: zulu
         java-version: 11
     - name: Chang Mod
+      working-directory: ./JavaKotlin
       run: chmod 755 gradlew    
     - name: run-test
       working-directory: ./JavaKotlin
