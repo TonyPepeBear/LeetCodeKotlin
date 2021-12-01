@@ -7,8 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: actions/setup-java@master
+    - uses: actions/setup-java@v2
       with:
+        distributions: zulu
         java-version: 11
     - name: Chang Mod
       run: chmod 755 gradlew    
