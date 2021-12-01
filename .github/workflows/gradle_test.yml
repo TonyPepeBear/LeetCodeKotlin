@@ -15,8 +15,7 @@ jobs:
         java-version: 11
     - name: Chang Mod
       run: chmod 755 gradlew    
-    - name: run-test
+    - uses: eskatos/gradle-command-action@v1
       working-directory: ./JavaKotlin
-      uses: eskatos/gradle-command-action@v1
       with:
         arguments: test
